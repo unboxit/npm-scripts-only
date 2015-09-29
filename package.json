@@ -1,0 +1,35 @@
+{
+  "name": "npm-scripts-fewonlyd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rfv ./dist",
+    "mkdir": "mkdir -p ./dist/css ./dist/js",
+    "html": "html-minifier --collapse-whitespace ./src/index.html -o ./dist/index.html",
+    "css": "stylus --include ./node_modules --include-css --compress ./src/css/main.styl -o ./dist/css/style.css",
+    "js": "browserify ./src/js/main.js | uglifyjs > ./dist/js/bundle.js",
+    "fonts": "fontify",
+    "build": "npm run clean && npm run mkdir && npm run html & npm run css & npm run js & npm run fonts",
+    "watch-html": "nodemon --ext html --watch ./src/ --exec 'npm run html'",
+    "watch-css": "nodemon --ext styl --watch ./src/css --exec 'npm run css'",
+    "watch-js": "nodemon --ext js --watch ./src/js --exec 'npm run js'",
+    "watch": "npm run watch-html & npm run watch-css & npm run watch-js",
+    "server": "npm run watch & live-server --port=3000 ./dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "11.2.0",
+    "fontify": "0.0.2",
+    "html-minifier": "0.8.0",
+    "nodemon": "1.7.1",
+    "stylus": "0.52.4",
+    "uglify-js": "2.4.24"
+  },
+  "dependencies": {
+    "bootstrap": "3.3.5",
+    "jquery": "2.1.4"
+  }
+}
