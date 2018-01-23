@@ -21,15 +21,15 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "browserify": "13.0.0",
+    "browserify": "15.2.0",
     "fontify": "0.0.2",
-    "html-minifier": "1.2.0",
-    "nodemon": "1.9.1",
-    "stylus": "0.54.0",
-    "uglify-js": "2.6.2"
+    "html-minifier": "3.5.8",
+    "nodemon": "1.14.11",
+    "stylus": "0.54.5",
+    "uglify-js": "3.3.8"
   },
   "dependencies": {
-    "bootstrap": "3.3.6",
-    "jquery": "2.2.1"
+    "bootstrap": "4.0.0",
+    "jquery": "3.3.1"
   }
 }
