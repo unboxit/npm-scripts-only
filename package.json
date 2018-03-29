@@ -21,7 +21,7 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "browserify": "15.2.0",
+    "browserify": "16.1.1",
     "fontify": "0.0.2",
     "html-minifier": "3.5.8",
     "nodemon": "1.14.11",
