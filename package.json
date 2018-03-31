@@ -23,7 +23,7 @@
   "devDependencies": {
     "browserify": "16.1.1",
     "fontify": "0.0.2",
-    "html-minifier": "3.5.12",
+    "html-minifier": "3.5.13",
     "nodemon": "1.17.2",
     "stylus": "0.54.5",
     "uglify-js": "3.3.16"
