@@ -23,7 +23,7 @@
   "devDependencies": {
     "browserify": "16.2.3",
     "fontify": "0.0.2",
-    "html-minifier": "3.5.14",
+    "html-minifier": "4.0.0",
     "live-server": "1.2.1",
     "nodemon": "1.17.3",
     "stylus": "0.54.5",
