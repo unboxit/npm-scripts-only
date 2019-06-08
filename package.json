@@ -1,21 +1,21 @@
 {
-  "name": "npm-scripts-fewonlyd",
+  "name": "npm-scripts-only",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "clean": "rm -rfv ./dist",
     "mkdir": "mkdir -p ./dist/css ./dist/js",
-    "html": "html-minifier --collapse-whitespace ./src/index.html -o ./dist/index.html",
     "css": "stylus --include ./node_modules --include-css --compress ./src/css/main.styl -o ./dist/css/style.css",
+    "html": "html-minifier --collapse-whitespace ./src/index.html -o ./dist/index.html",
     "js": "browserify ./src/js/main.js | uglifyjs > ./dist/js/bundle.js",
     "fonts": "fontify",
-    "build": "npm run clean && npm run mkdir && npm run html & npm run css & npm run js & npm run fonts",
-    "watch-html": "nodemon --ext html --watch ./src/ --exec 'npm run html'",
+    "build": "npm run clean && npm run mkdir && npm run html && npm run css && npm run js && npm run fonts",
     "watch-css": "nodemon --ext styl --watch ./src/css --exec 'npm run css'",
+    "watch-html": "nodemon --ext html --watch ./src/ --exec 'npm run html'",
     "watch-js": "nodemon --ext js --watch ./src/js --exec 'npm run js'",
     "watch": "npm run watch-html & npm run watch-css & npm run watch-js",
-    "server": "npm run watch & live-server --port=3000 ./dist"
+    "start": "npm run watch & live-server --port=3000 ./dist"
   },
   "keywords": [],
   "author": "",
