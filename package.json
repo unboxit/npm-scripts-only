@@ -27,7 +27,7 @@
     "live-server": "1.2.1",
     "nodemon": "1.19.0",
     "stylus": "0.54.5",
-    "uglify-js": "3.5.11"
+    "uglify-js": "3.6.0"
   },
   "dependencies": {
     "bootstrap": "^4.3.1",
