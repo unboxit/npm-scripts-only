@@ -24,8 +24,8 @@
     "browserify": "16.2.3",
     "fontify": "0.0.2",
     "html-minifier": "4.0.0",
-    "live-server": "1.2.1",
-    "nodemon": "1.19.1",
+    "live-server": "^1.2.1",
+    "nodemon": "^2.0.3",
     "stylus": "0.54.5",
     "uglify-js": "3.6.0"
   },
